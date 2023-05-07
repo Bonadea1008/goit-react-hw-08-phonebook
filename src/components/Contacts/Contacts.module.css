@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 24px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  background-color: rgb(226, 217, 217);
+  margin-left: 60px;
+  border-color: rgb(226, 217, 217);
+  box-shadow: 5px 5px rgb(141, 137, 137);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}

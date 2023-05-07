@@ -1,0 +1,18 @@
+.section {
+  padding: 30px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-family: Marvel;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 0;
+  border-bottom: 1px solid black;
+}

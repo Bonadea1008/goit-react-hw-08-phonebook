@@ -1,0 +1,28 @@
+.navLink {
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.authNavList {
+  display: flex;
+  color: black;
+  font-weight: 500;
+  /* justify-content: space-between; */
+  list-style: none;
+  gap: 12px;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  height: 40px;
+  color: black;
+}
+
+.userMenuButton {
+  height: 30px;
+  color: inherit;
+}
