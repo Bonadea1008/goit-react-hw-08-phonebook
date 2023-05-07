@@ -1,6 +1,6 @@
 import img from '../../img/images.png';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div className="container">
       <img src={img} alt="Phone book" />
@@ -8,3 +8,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;

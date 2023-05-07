@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import { AppBar } from '../Navigation/AppBar';
 import css from './SharedLayout.module.css';
-// import { Loader } from './Loader';
+import { Suspense } from 'react';
+import { Loader } from '../Loader';
 
 export const SharedLayout = () => {
   return (
@@ -10,9 +11,11 @@ export const SharedLayout = () => {
         <header className={css.header}>
           <AppBar />
         </header>
-        <main>
-          <Outlet />
-        </main>
+        <Suspense fallback={<Loader />}>
+          <main>
+            <Outlet />
+          </main>
+        </Suspense>
       </div>
     </>
   );

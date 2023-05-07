@@ -12,7 +12,7 @@ import { ContactsList } from '../Contacts/ContactsList';
 import { Filter } from '../Filter/Filter';
 import { Loader } from '../Loader';
 
-export const ContactsPage = () => {
+const ContactsPage = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
@@ -37,3 +37,5 @@ export const ContactsPage = () => {
     </>
   );
 };
+
+export default ContactsPage;

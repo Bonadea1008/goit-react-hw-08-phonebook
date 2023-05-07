@@ -1,8 +1,11 @@
 .section {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 30px;
+  margin-bottom: 24px;
   border: 1px solid grey;
   border-radius: 8px;
-  margin-bottom: 24px;
+  background-color: rgba(221, 239, 248, 0.4);
 }
 
 .title {
