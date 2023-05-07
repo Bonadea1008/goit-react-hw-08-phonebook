@@ -18,6 +18,21 @@ code {
 .container {
   margin: 60px auto;
   text-align: center;
+  animation: homePage 4s ease-in-out;
+}
+
+@keyframes homePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  opacity: 1;
+  transition: opacity 5s;
 }
 
 .active {
