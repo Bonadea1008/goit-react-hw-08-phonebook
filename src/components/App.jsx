@@ -1,9 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout/SharedLayout';
-// import { ContactsPage } from './Pages/ContactsPage';
-// import { HomePage } from './Pages/HomePage';
-// import RegisterPage from './Pages/RegisterPage';
-// import LoginPage from './Pages/LoginPage';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, lazy } from 'react';
 import { refreshUserThunk } from 'redux/Auth/authThunk';

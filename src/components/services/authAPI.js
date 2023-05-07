@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Notify } from 'notiflix';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 
@@ -16,6 +17,7 @@ export const register = async credentials => {
     setAuthHeader(data.token);
     return data;
   } catch (error) {
+    Notify.failure('Something went wrong. Try again!');
     return Promise.reject(error.message);
   }
 };
@@ -26,6 +28,7 @@ export const login = async credentials => {
     setAuthHeader(data.token);
     return data;
   } catch (error) {
+    Notify.failure('Something went wrong. Try again!');
     return Promise.reject(error.message);
   }
 };
@@ -35,6 +38,7 @@ export const logout = async () => {
     await axios.post('users/logout');
     clearAuthHeader();
   } catch (error) {
+    Notify.failure('Something went wrong. Try again!');
     return Promise.reject(error.message);
   }
 };

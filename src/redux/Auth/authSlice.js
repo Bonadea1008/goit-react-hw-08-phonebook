@@ -11,8 +11,8 @@ const handlePending = state => {
   state.isLoading = true;
 };
 
-const handleRejected = (state, { payload }) => {
-  state.error = payload.error;
+const handleRejected = (state, { error }) => {
+  state.error = error;
   state.isLoading = false;
 };
 

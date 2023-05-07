@@ -1,6 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { register, login, logout } from '../../components/services/authAPI';
 import { setAuthHeader } from '../../components/services/authAPI';
+import { Notify } from 'notiflix';
 import axios from 'axios';
 
 export const registerThunk = createAsyncThunk('auth/register', credentials =>
@@ -28,7 +29,8 @@ export const refreshUserThunk = createAsyncThunk(
       const { data } = await axios.get('/users/current');
       return data;
     } catch (error) {
-      return Promise.reject(error.message);
+      Notify.failure('Something went wrong. Try again!');
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );

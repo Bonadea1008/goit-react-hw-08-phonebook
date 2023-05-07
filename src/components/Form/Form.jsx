@@ -36,8 +36,8 @@ export function InputForm() {
 
     dispatch(
       createContactsThunk({
-        name: name,
-        number: number,
+        name,
+        number,
       })
     );
 
